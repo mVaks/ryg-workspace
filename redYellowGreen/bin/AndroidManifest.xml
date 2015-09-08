@@ -1,0 +1,89 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.something.redyellowgreen">
+  <!-- Include required permissions for Google Mobile Ads to run-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="22"/>
+
+    <application android:allowBackup="true" android:debuggable="true" android:icon="@drawable/icon2" android:label="@string/app_name" android:name="com.something.redyellowgreen.MyApplication" android:theme="@android:style/Theme.NoTitleBar">
+ <!--This meta-data tag is required to use Google Play Services.-->
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:icon="@drawable/icon2" android:label="@string/app_name" android:name="com.something.redyellowgreen.MainActivity">
+            
+        </activity>
+     
+          <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.Global">
+          
+        </activity>
+
+          
+          <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.MyApplication">
+            
+        </activity>
+         <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.SplashActivity2" android:theme="@style/MyTheme">
+            
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.InfoActivity" android:theme="@style/MyTheme">
+            
+        </activity>
+         <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.Information" android:theme="@style/MyTheme">
+            
+        </activity>
+          <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.Information2" android:theme="@style/MyTheme">
+            
+        </activity>
+          <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.Information3" android:theme="@style/MyTheme">
+            
+        </activity>
+          <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.Information4" android:theme="@style/MyTheme">
+            
+        </activity>
+          <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.Information5" android:theme="@style/MyTheme">
+            
+        </activity>
+          <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.Information6" android:theme="@style/MyTheme">
+            
+        </activity>
+         <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.GoActivity" android:theme="@style/MyTheme">
+            
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.GameOverActivity" android:theme="@style/MyTheme">
+            
+        </activity>
+         <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.RedActivity" android:theme="@style/MyTheme">
+            
+        </activity>
+         <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.YellowActivity" android:theme="@style/MyTheme">
+            
+        </activity>
+         <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.GreenActivity" android:theme="@style/MyTheme">
+            
+        </activity>
+        
+         <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.SplashActivity3" android:theme="@style/MyTheme">
+            
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="com.something.redyellowgreen.SplashActivity" android:theme="@style/MyTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            
+        </activity>
+        
+        <activity android:name="com.something.redyellowgreen.ui.ArticlesActivity" android:theme="@style/MyTheme">
+</activity>
+      <!--Include the AdActivity configChanges and theme. -->
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="orientation|keyboardHidden" android:label="Swarm" android:name="com.swarmconnect.SwarmMainActivity" android:screenOrientation="portrait" android:theme="@style/HoloTheme" android:windowSoftInputMode="stateHidden"/>
+        
+        <service android:name="com.swarmconnect.NotificationService" android:process=":swarm"/>
+
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	
+	<!-- Required if using the Swarm Store features. Not required otherwise. -->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+</manifest>
